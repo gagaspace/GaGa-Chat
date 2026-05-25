@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 120 35% 30%;
+
+    --card: 120 20% 98%;
+    --card-foreground: 120 35% 30%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 35% 30%;
+
+    --primary: 120 80% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 120 60% 85%;
+    --secondary-foreground: 120 35% 30%;
+
+    --muted: 120 25% 88%;
+    --muted-foreground: 120 25% 55%;
+
+    --accent: 120 80% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 120 40% 90%;
+    --input: 120 30% 94%;
+    --ring: 120 80% 42%;
+
+    --radius: 0.75rem;
+
+    --line-green: 120 80% 42%;
+    --line-green-dark: 120 80% 32%;
+    --line-green-light: 120 80% 92%;
+    --line-bg: 120 40% 97%;
+    --line-chat-bg: 120 50% 96%;
+
+    --sidebar-background: 120 20% 98%;
+    --sidebar-foreground: 120 35% 30%;
+    --sidebar-primary: 120 80% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 120 60% 85%;
+    --sidebar-accent-foreground: 120 35% 30%;
+    --sidebar-border: 120 50% 92%;
+    --sidebar-ring: 120 80% 42%;
+  }
+
+  .dark {
+    --background: 120 25% 20%;
+    --foreground: 120 25% 92%;
+    --card: 120 30% 25%;
+    --card-foreground: 120 25% 92%;
+    --popover: 120 30% 25%;
+    --popover-foreground: 120 25% 92%;
+    --primary: 120 80% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 120 50% 40%;
+    --secondary-foreground: 120 25% 92%;
+    --muted: 120 35% 45%;
+    --muted-foreground: 120 25% 75%;
+    --accent: 120 80% 48%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 120 40% 40%;
+    --input: 120 35% 35%;
+    --ring: 120 80% 48%;
+    --sidebar-background: 120 25% 22%;
+    --sidebar-foreground: 120 25% 90%;
+    --sidebar-primary: 120 80% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 120 50% 40%;
+    --sidebar-accent-foreground: 120 25% 90%;
+    --sidebar-border: 120 40% 40%;
+    --sidebar-ring: 120 80% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-line-green {
+    color: #00FF00;
+  }
+  .line-green {
+    color: #00FF00;
+  }
+  .bg-line-green {
+    background: linear-gradient(135deg, #00CC00 0%, #00FF00 60%, #ADFF2F 100%);
+  }
+  .bg-line-green-dark {
+    background-color: #00AA00;
+  }
+  .bg-line-green-light {
+    background-color: #f0fff0;
+  }
+  .bg-line-chat {
+    background-color: hsl(200, 20%, 92%);
+  }
+
+  /* GChat signature gradient header */
+  .gchat-header {
+    background: linear-gradient(135deg, #00CC00 0%, #00FF00 55%, #ADFF2F 100%);
+    box-shadow: 0 2px 12px rgba(0, 255, 0, 0.25);
+  }
+
+  .gchat-logo-glow {
+    filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.7));
+  }
+
+  .gchat-btn {
+    background: linear-gradient(135deg, #00CC00 0%, #00FF00 60%, #ADFF2F 100%);
+    color: #003300;
+    font-weight: 600;
+  }
+
+  .chat-bubble-sent {
+    background: linear-gradient(135deg, #00BB00 0%, #00FF00 70%, #ADFF2F 100%);
+    color: #002800;
+    border-radius: 18px 18px 4px 18px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 255, 0, 0.2);
+  }
+
+  .chat-bubble-received {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-radius: 18px 18px 18px 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+
+  .nav-tab-active {
+    color: #00FF00;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .status-online {
+    background-color: #00FF00;
+  }
+
+  .line-gradient {
+    background: linear-gradient(135deg, #00CC00 0%, #00FF00 60%, #ADFF2F 100%);
+  }
+
+  .story-ring {
+    background: linear-gradient(45deg, #00FF00, #ADFF2F);
+    padding: 2px;
+    border-radius: 50%;
+  }
+}
+
+/* Animations */
+@keyframes slideInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(0, 255, 0, 0); }
+}
+
+.animate-slide-in {
+  animation: slideInUp 0.3s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out;
+}
+
+.animate-bounce-in {
+  animation: bounceIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pulse-green {
+  animation: pulse-green 2s infinite;
+}
+
+/* Sticker animation */
+.sticker {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  transition: transform 0.2s ease;
+}
+.sticker:hover {
+  transform: scale(1.1);
+}
+
+/* Typing indicator */
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  animation: typingBounce 1.2s infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-6px); }
+}

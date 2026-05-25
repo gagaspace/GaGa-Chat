@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f8faf7 20%, #f3f9f0 40%, #eff7ed 60%, #e8f5e9 80%, #f0f9ee 100%);
+  min-height: 100vh;
+}
+
+/* Unified White-Green Gradient Background */
+.bg-gradient-unified {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faf7 20%, #f3f9f0 40%, #eff7ed 60%, #e8f5e9 80%, #f0f9ee 100%);
+}
+
+.bg-gradient-white-green {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faf7 20%, #f3f9f0 40%, #eff7ed 60%, #e8f5e9 80%, #f0f9ee 100%);
+}
+
+.bg-gradient-white-green-light {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faf7 20%, #f3f9f0 40%, #eff7ed 60%, #e8f5e9 80%, #f0f9ee 100%);
+}
+
+.bg-gradient-white-green-dark {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faf7 20%, #f3f9f0 40%, #eff7ed 60%, #e8f5e9 80%, #f0f9ee 100%);
+}
+
+.bg-gradient-green-white {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faf7 20%, #f3f9f0 40%, #eff7ed 60%, #e8f5e9 80%, #f0f9ee 100%);
+}
+
+.bg-gradient-subtle-green {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faf7 20%, #f3f9f0 40%, #eff7ed 60%, #e8f5e9 80%, #f0f9ee 100%);
+}
+
+/* GaGa Chat Header with unified gradient */
+.gchat-header {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 247, 0.98) 30%, rgba(243, 249, 240, 0.98) 70%, rgba(239, 247, 237, 0.98) 100%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.08);
+  border-bottom: 1px solid rgba(34, 197, 94, 0.15);
+}
+
+/* Gradient Text */
+.text-gradient-green {
+  background: linear-gradient(135deg, #2d6a3e 0%, #22c55e 50%, #4ade80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  filter: drop-shadow(0 4px 8px rgba(34, 197, 94, 0.1));
+}
+
+.logo:hover {
+  filter: drop-shadow(0 8px 16px rgba(34, 197, 94, 0.15));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 8px 16px rgba(134, 239, 172, 0.2));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 247, 0.92) 100%);
+  border: 1px solid rgba(34, 197, 94, 0.15);
+  border-radius: 0.75rem;
+}
+
+.read-the-docs {
+  color: #22c55e;
+}
+
+/* Smooth gradient transitions */
+.gradient-transition {
+  transition: background 0.3s ease-in-out;
+}
+
+/* Overlay gradient effects */
+.overlay-green {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(220, 252, 231, 0.08) 100%);
+}
