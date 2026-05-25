@@ -1,0 +1,37 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#061013" />
+      <stop offset="40%" stop-color="#0d1e2a" />
+      <stop offset="100%" stop-color="#03120f" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8cff94" />
+      <stop offset="100%" stop-color="#00d200" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+  <circle cx="220" cy="160" r="140" fill="rgba(84,255,150,0.18)" />
+  <circle cx="980" cy="520" r="120" fill="rgba(0,255,0,0.14)" />
+  <rect x="170" y="280" width="520" height="260" rx="40" fill="#071010" opacity="0.95" />
+  <rect x="190" y="300" width="220" height="140" rx="30" fill="#0c181e" stroke="rgba(140,255,150,0.22)" stroke-width="2" />
+  <rect x="440" y="300" width="260" height="180" rx="30" fill="#0c181e" stroke="rgba(140,255,150,0.22)" stroke-width="2" />
+  <circle cx="260" cy="350" r="10" fill="#84ff96" />
+  <circle cx="340" cy="390" r="8" fill="#00ff7f" />
+  <circle cx="520" cy="360" r="8" fill="#00ff7f" />
+  <path d="M540 340 h90 a30 30 0 0 1 30 30 v50 a10 10 0 0 1 -10 10 h-60 l-40 30 v-30 h-10 a-30 30 0 0 1 -30 -30 v-50 a30 30 0 0 1 30 -30z" fill="#0e262c" stroke="#84ff96" stroke-width="2" />
+  <text x="180" y="180" font-family="'Noto Sans', sans-serif" font-size="68" font-weight="800" fill="#ffffff">GaGa Chat</text>
+  <text x="180" y="240" font-family="'Noto Sans', sans-serif" font-size="26" fill="#c4f7c7" opacity="0.95">Live messaging, voice calls, and secure realtime connections.</text>
+  <text x="180" y="295" font-family="'Noto Sans', sans-serif" font-size="24" fill="#87ff9a" opacity="0.9">Spark faster conversations with friends and teams.</text>
+  <circle cx="960" cy="170" r="34" fill="#00ff7f" filter="url(#glow)" opacity="0.64" />
+  <path d="M898 148 l18 -18 l32 32 l-18 18 z" fill="#ffffff" opacity="0.8" />
+  <path d="M850 470 l10 -12 l14 8 l-10 12 z" fill="#8cff94" opacity="0.85" />
+  <path d="M1020 490 a12 12 0 1 1 -24 0 a12 12 0 1 1 24 0" fill="#ccffdd" opacity="0.8" />
+</svg>
